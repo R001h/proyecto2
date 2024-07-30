@@ -1,30 +1,28 @@
-let username = document.getElementById("username");
-let psw = document.getElementById("psw");
-let email= document.getElementById("email");
+const username = document.getElementById("username")
+const psw = document.getElementById("psw")
+const email= document.getElementById("email")
+const sign_up=document.getElementById("signUp")
+const listusername= JSON.parse(localStorage.getItem("listusername"))|| [];
 
-/*  get info  */
-function sign_up(){
-    username=document.getElementById("username").value;
-    psw=document.getElementById("psw").value;
-    email=document.getElementById("email").value;
+sign_up.addEventListener("click", function(){
+   let user ={
+      username: username.value,
+      psw: psw.value,
+      email: email.value
+   }
+ if (user.username && user.psw && user.email) {
+   
+listusername.push(user);
 
-    alert (username+psw+email);
+console.log(listusername);
+  alert(username.value);
+     ///guardar en el storage(Json para entrada y salida string-entero)///
+  localStorage.setItem("listusername",JSON.stringify(listusername));
 
-
-
-    /////CREAR UN OBJETO QUE ALMANCENE LOS DATOS D UN USUARIO OSEA DE UNA PERSONA
-    /// ESTOS DATOS QUE SON UN OBJETO SE DEBEN DE ALMACENAR EN UNA LISTA QUE VOY
-    // A ENVIAR A MI LOCALSTORAGE
-
-   /* save in tha storage  */
-   username=localStorage.setItem("username",JSON.stringify(username));
-   psw=localStorage.setItem("psw",JSON.stringify(psw));
-   email=localStorage.setItem("email",JSON.stringify(email));
-
-  /* get from storage  */
-   username= JSON.parse(localStorage.getItem("username",username));
-   psw=JSON.parse(localStorage.getItem("psw",psw));
-   email=JSON.parse(localStorage.getItem("email",email));
-
-  
-}
+alert ("congrats  your registration is successfull")
+  window.location="index.html";
+   
+ } else {
+   alert ("please fill the form")  
+ }
+})

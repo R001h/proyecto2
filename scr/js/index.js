@@ -1,16 +1,34 @@
+const username = document.getElementById("username")
+const psw = document.getElementById("psw")
+const email= document.getElementById("email")
+const sign_up=document.getElementById("signUp")
+  ///guardar en el storage(Json para entrada y salida string-entero)///
+const listusername= JSON.parse(localStorage.getItem("listusername")||[])
 
-function login()
-{
+sign_up.addEventListener("click",function () {
+    const  userDatabase = username.value;
+    const  pswDatabase = psw.value;
 
-    let username=document.getElementById("username").value;
-    let password=document.getElementById("psw").value;
+let userknow = false
 
-    if (username=="arbol"&&password=="1234")
-    { 
-     window.location="portaljob.html";
+    for (let index = 0; index < listusername.length; index++) {
+        const user = listusername[i]
+            //consulta lo guardado con ingresado////
+        if (user.username === userDatabase && user.psw === pswDatabase) {
+            userknow = true;
+            break; ///sale de ciclo//  
+        }
+        
     }
-    else{
-        alert("try again");
+    if (userknow){
+        window.location="portaljob.html";
+    } else{
+        alert("User name or password incorrect")
     }
 
-}
+       
+})
+
+
+
+

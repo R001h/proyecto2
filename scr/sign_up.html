@@ -9,30 +9,33 @@
 
 <h2> Sing up</h2>
 
-    <form>
-        <label for="userName"> User Name: </label>
+    <div>    
+        <label for="userName"> User Name:</label>
         <input type="text" placeholder="user" name="userName" id="username" required maxlength="45"> 
+        
         <label for="password"> Password: </label>
         <input type="password" placeholder="password"  name="psw" id="psw" required maxlength="45"><br>
+        
         <label for="firstname"> First Name: </label>
         <input type="text" placeholder="fist name" name="firstname" id="firstname" required maxlength="45"> 
+        
         <label for="lastname"> Last Name: </label>
         <input type="text" placeholder="last name" name="lastname" id="lastname" required maxlength="45"> <br>
-        <label for="mail"> E-Mail: </label>
+        
+        <label for="mail"> E-Mail:</label>
         <input type="email"  placeholder="email" name="mail" id="email" required maxlength="45">
         <label for="phone"> Phone Number: </label>
         <input type="number"  placeholder="phone number" name="phone" id="phone" required maxlength="45">
         <br>
-        <input type="button" value="Submit" onclick="sign_up()">
+        <button id="signUp">Submit</button>
+        
+       <!-- //* <input type="button" value="Submit" onclick="sign_up()">/*/ -->
        
-    </form>
+    </div>    
     
 <hr>
     
-   
-    
-
-<script src="/js/sign_up.js"></script>
+<script src="/proyecto2/scr/js/sign_up.js"></script>
 
 </body>
 </html>

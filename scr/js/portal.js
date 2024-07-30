@@ -2,13 +2,12 @@ const taskMain = document.getElementById("taskMain")
 const addJ = document.getElementById("add1")
 
 addJ.addEventListener("click",function(){
-    let taskS = taskMain.value
-    let ptask = document.createElement("p")
+   const taskS = taskMain.value
+   const ptask = document.createElement("p")
 
-    let divHijo = document.createElement("div")
-    let btnDelete= document.createElement("button")
-    let btnEdit= document.createElement("button")
-
+   const divHijo = document.createElement("div")
+   const btnDelete= document.createElement("button")
+   const btnEdit= document.createElement("button")
 
         ptask.innerHTML=taskS
         btnDelete.innerHTML="delete"
@@ -18,8 +17,15 @@ addJ.addEventListener("click",function(){
         divHijo.appendChild(btnEdit)
         divHijo.appendChild(btnDelete)
 
-        containerTask.appendChild(divHijo)
-        
-    
+        containerTask.appendChild(divHijo)  
 
 })
+
+///seleciona entre tarea y event///
+function tSelection() {
+    var x = document.getElementById("task").selected;
+  document.getElementById("event").innerHTML = x;
+
+  }
+
+  

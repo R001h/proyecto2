@@ -7,7 +7,6 @@ const listusername= JSON.parse(localStorage.getItem("listusername")||[])
 
 sign_up.addEventListener("click",function () {
 
-    console.log(2);
     const  userDatabase = username.value;
     const  pswDatabase = psw.value;
    

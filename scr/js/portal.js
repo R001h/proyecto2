@@ -1,13 +1,25 @@
-const taskMain = document.getElementById("taskMain")
-const addJ = document.getElementById("add1")
+const taskMain = document.getElementById("taskMain");
+const addJ = document.getElementById("add1");
+const containerTask = document.getElementById("containerTask");
+const prioritySelect = document.getElementById("prioritySelect");
+const typeSelect = document.getElementById("typeSelect");
+
+
+const eventTitle = document.getElementById("eventTitle");
+const eventDate = document.getElementById("eventDate");
+const addEventBtn = document.getElementById("addEventBtn");
+const eventsContainer = document.getElementById("eventsContainer");
+
 
 addJ.addEventListener("click",function(){
-   const taskS = taskMain.value
-   const ptask = document.createElement("p")
+   const taskS = taskMain.value.trim; // calor campo text
+   const selectedType = typeSelect.value; // Obtiene (tarea o evento)
+   const selectedPriority = prioritySelect.value; // Obtieneprioridad seleccionada
 
-   const divHijo = document.createElement("div")
-   const btnDelete= document.createElement("button")
-   const btnEdit= document.createElement("button")
+    if(taskS ===""){
+        alert("please introduce task or event") // No campos vacios
+        return;
+    }
 
         ptask.innerHTML=taskS
         btnDelete.innerHTML="delete"
@@ -27,5 +39,3 @@ function tSelection() {
   document.getElementById("event").innerHTML = x;
 
   }
-
-  

@@ -8,25 +8,30 @@
 <body>
     
 <H1>Portal Job</H1>
-<h2>Task and Event Management</h2>
-<div class="form-container">
-    <input type="text" id="taskMain" placeholder="Enter task or event">
-    <br>
-    <select id="typeSelect">
-        <option value="task">Task</option>
-        <option value="event">Event</option>
-    </select>
-    <br>
-    <select id="prioritySelect">
-        <option value="high">High</option>
-        <option value="medium">Medium</option>
-        <option value="low">Low</option>
-    </select>
-    <br>
-    <button type="button" id="add1">Add</button>
-    <div id="containerTask"></div>
-</div>
-
+ <h2>Event and Task Manager</h2>
+    
+    <div>
+        <input type="text" id="taskMain" placeholder="Enter task or event">
+        <br>
+        <label for="typeSelect">Type:</label>
+        <select id="typeSelect">
+            <option value="task">Task</option>
+            <option value="event">Event</option>
+        </select>
+        <br>
+        <label for="prioritySelect">Priority:</label>
+        <select id="prioritySelect">
+            <option value="high">High</option>
+            <option value="medium">Medium</option>
+            <option value="low">Low</option>
+        </select>
+        <br>
+        <label for="eventDate" id="dateLabel" style="display:none;">Event Date:</label>
+        <input type="date" id="eventDate" style="display:none;">
+        <br>
+        <button type="button" id="add1">Add</button>
+        <div id="containerTask"></div>
+    </div>
 
 <script src="/proyecto2/scr/js/portal.js"></script>
 </body>

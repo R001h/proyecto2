@@ -8,31 +8,23 @@
 <body>
     
 <H1>Portal Job</H1>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<div>
-    <input type="text" id="taskMain">
+<h2>Task and Event Management</h2>
+<div class="form-container">
+    <input type="text" id="taskMain" placeholder="Enter task or event">
     <br>
-<!--     
-    <input type="checkbox" id="high">High
-    <input type="checkbox" id="medium">Medium
-    <input type="checkbox" id="low">Low -->
-    <br>
-   <select>
-    <option id="task">Task</option>
-    <option id="event">Evento</option>
+    <select id="typeSelect">
+        <option value="task">Task</option>
+        <option value="event">Event</option>
     </select>
     <br>
-    <button type="text" id="add1">Add</button>
-    <div id ="containerTask">
-
-    </div>
-
+    <select id="prioritySelect">
+        <option value="high">High</option>
+        <option value="medium">Medium</option>
+        <option value="low">Low</option>
+    </select>
+    <br>
+    <button type="button" id="add1">Add</button>
+    <div id="containerTask"></div>
 </div>
 
 

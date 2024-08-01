@@ -1,0 +1,41 @@
+.eventDate,.dateLabel {
+    display: none;
+}
+
+body {
+    display: grid;
+    grid-template-columns: auto;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    background-color: darkgrey;
+
+}
+.hTitle{
+    margin-left: 20PX;
+    background-color: darkgrey;
+    border: auto;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center; 
+    color: yellow;
+}
+
+.box{
+
+    margin-left: 120px;
+    grid-template-columns: auto;
+    justify-content: center;
+    margin-top: 10%;
+    background-color: darkgrey;
+
+}
+
+.btn2{
+    align-items: center;
+    justify-content: center;
+    margin-left: 150px;
+
+}

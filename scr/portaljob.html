@@ -3,36 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Event and Task Manager</title>
+    <link rel="icon" type="image/x-icon" href="/proyecto2/scr/img/favicon.png">
+    <link rel="stylesheet" href="css/portal.css"> <!-- Vincular archivo CSS -->
 </head>
 <body>
-    
-<H1>Portal Job</H1>
- <h2>Event and Task Manager</h2>
-    
-    <div>
+    <h1 class="hTitle">Portal Job  Los patitos S.A </h1>
+    <img src="/proyecto2/scr/img/duck_PNG5007.png">
+    <h2 class="hTitle">Event and Task Manager</h2>
+
+<div class="box">
         <input type="text" id="taskMain" placeholder="Enter task or event">
-        <br>
+        <br><br>
         <label for="typeSelect">Type:</label>
         <select id="typeSelect">
             <option value="task">Task</option>
+            <br>
             <option value="event">Event</option>
         </select>
-        <br>
+        <br><br>
         <label for="prioritySelect">Priority:</label>
         <select id="prioritySelect">
             <option value="high">High</option>
             <option value="medium">Medium</option>
             <option value="low">Low</option>
         </select>
-        <br>
-        <label for="eventDate" id="dateLabel" style="display:none;">Event Date:</label>
-        <input type="date" id="eventDate" style="display:none;">
-        <br>
-        <button type="button" id="add1">Add</button>
+        <br><br>
+        <label for="eventDate" id="dateLabel">Event Date:</label>
+        <input type="date" id="eventDate">
+        <br><br>
+        <button class="btn" type="button" id="add1">Add</button>
+        <br><br>
         <div id="containerTask"></div>
     </div>
 
-<script src="/proyecto2/scr/js/portal.js"></script>
+
+<br><br><br><br>
+
+    <script src="/proyecto2/scr/js/portal.js"></script>
 </body>
 </html>

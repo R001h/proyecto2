@@ -14,8 +14,7 @@ sign_up.addEventListener("click",function () {
 
     for (let index = 0; index < listusername.length; index++) {
         const user = listusername[index]
-            //consulta lo guardado con ingresado////
-        if (user.username === userDatabase && user.psw === pswDatabase) {
+        if (user.username === userDatabase && user.psw === pswDatabase) {//consulta lo guardado con ingresado////
             userknow = true;
             break; ///sale de ciclo//  
         }
@@ -28,6 +27,8 @@ sign_up.addEventListener("click",function () {
 
        
 })
+
+
 
 
 

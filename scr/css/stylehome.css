@@ -1,0 +1,50 @@
+
+
+body {
+    display: grid;
+    grid-template-columns: auto;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+    background-color: darkgrey;
+
+}
+
+.singTitle{
+    background-color: darkgrey;
+    border: auto;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center; 
+    color: yellow;
+}
+.box{
+   margin-left: 100px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    
+
+}
+.btn1{
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+
+}
+
+.btn2{
+    align-items: center;
+    justify-content: center;
+    margin-left: 170px;
+
+}
+
+.submit{
+    display: grid;
+  
+
+
+}

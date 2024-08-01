@@ -19,8 +19,8 @@ console.log(listusername);
      ///guardar en el storage(Json para entrada y salida string-entero)///
   localStorage.setItem("listusername",JSON.stringify(listusername));
 
-alert ("congrats  your registration is successfull")
-  window.location="index.html";
+  console.log ("congrats  your registration is successfull")
+  window.location.href="http://127.0.0.1:5500/proyecto2/scr/index.html"
    
  } else {
    alert ("please fill the form")  

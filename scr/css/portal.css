@@ -22,20 +22,26 @@ body {
     justify-content: center; 
     color: yellow;
 }
+.taskMain{
+    margin-left: 50px;
+
+}
 
 .box{
 
     margin-left: 120px;
     grid-template-columns: auto;
     justify-content: center;
-    margin-top: 10%;
+    margin-top: 1%;
     background-color: darkgrey;
 
 }
 
-.btn2{
+.btn{
     align-items: center;
     justify-content: center;
-    margin-left: 150px;
+    margin-left: 90px;
 
 }
+.typeSelect{
+margin-left: 50px;}
